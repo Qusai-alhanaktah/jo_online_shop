@@ -1,1 +1,1 @@
-# jo_online_shop
+# JO Online Shop
