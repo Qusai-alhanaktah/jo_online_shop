@@ -1,0 +1,1210 @@
+Started GET "/" for ::1 at 2021-02-02 16:56:08 +0200
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "joShop_development" does not exist
+):
+  
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:319:in `retrieve_connection'
+activerecord (6.1.1) lib/active_record/connection_handling.rb:275:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.0) lib/puma/configuration.rb:247:in `call'
+puma (5.2.0) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.0) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.0) lib/puma/server.rb:432:in `process_client'
+puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (735.8ms)[0m  [1m[35mCREATE DATABASE "joShop_development" ENCODING = 'unicode'[0m
+  [1m[35m (528.1ms)[0m  [1m[35mCREATE DATABASE "joShop_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-02-02 17:02:21 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/qusai/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qusai/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.7ms | Allocations: 419)
+Completed 200 OK in 13ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3472)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:04:03 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/qusai/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/qusai/.rbenv/versions/3.0.0/lib/ruby/gems/3.0.0/gems/railties-6.1.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.0ms | Allocations: 223)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 956)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:10:55 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shops/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/qusai/joShop/public/packs
+[Webpacker] Hash: 3a5c41259dc10a25f4c0
+Version: webpack 4.46.0
+Time: 3792ms
+Built at: 02/02/2021 5:11:00 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-6845755d506ef3549e5c.js    1.1 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-6845755d506ef3549e5c.js.map   1.27 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint hello_react = js/hello_react-6845755d506ef3549e5c.js js/hello_react-6845755d506ef3549e5c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.05 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+  Rendered shops/index.html.erb within layouts/application (Duration: 4712.3ms | Allocations: 2523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4730.7ms | Allocations: 15459)
+Completed 200 OK in 4733ms (Views: 4732.3ms | Allocations: 16693)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:11:16 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shops/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shops/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1571)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4308)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 4777)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:17:21 +0200
+Processing by ShopsController#index as HTML
+Completed 406 Not Acceptable in 4ms (Allocations: 1926)
+
+
+  
+ActionController::MissingExactTemplate (ShopsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.1.1) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (6.1.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.1) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.1) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.1) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.1) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.1) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.0) lib/puma/configuration.rb:247:in `call'
+puma (5.2.0) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.0) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.0) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.0) lib/puma/server.rb:432:in `process_client'
+puma (5.2.0) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-02-02 17:17:32 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shops/index.html.haml within layouts/application (Duration: 4.7ms | Allocations: 4923)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 12.4ms | Allocations: 12969)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 16141)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:18:32 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/qusai/joShop/public/packs
+[Webpacker] Hash: 21a829812912a7285159
+Version: webpack 4.46.0
+Time: 893ms
+Built at: 02/02/2021 5:18:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-d3eb359c8d077279df1b.js    1.1 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-d3eb359c8d077279df1b.js.map   1.27 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint hello_react = js/hello_react-d3eb359c8d077279df1b.js js/hello_react-d3eb359c8d077279df1b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.04 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1810.8ms | Allocations: 2868)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1814.1ms | Allocations: 5654)
+Completed 200 OK in 1815ms (Views: 1814.8ms | ActiveRecord: 0.0ms | Allocations: 6283)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:20:04 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/qusai/joShop/public/packs
+[Webpacker] Hash: f1f6e69e219b3fe571da
+Version: webpack 4.46.0
+Time: 1030ms
+Built at: 02/02/2021 5:20:06 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-4861e8944655c2da1ed7.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-4861e8944655c2da1ed7.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  647 bytes               [emitted]              
+Entrypoint app = js/app-4861e8944655c2da1ed7.js js/app-4861e8944655c2da1ed7.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 1.04 KiB {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1943.2ms | Allocations: 4068)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1948.6ms | Allocations: 9881)
+Completed 200 OK in 1953ms (Views: 1951.1ms | ActiveRecord: 0.0ms | Allocations: 11103)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:24:35 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 2baac34709f1c3e06b90
+Version: webpack 4.46.0
+Time: 559ms
+Built at: 02/02/2021 5:24:37 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-024bcd8198206104d4ac.js   7.05 KiB          app  [emitted] [immutable]  app
+        js/app-024bcd8198206104d4ac.js.map   3.51 KiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-976810ffc72b3105a940.js   86.4 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-976810ffc72b3105a940.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-024bcd8198206104d4ac.js js/app-024bcd8198206104d4ac.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-976810ffc72b3105a940.js js/shops/index-976810ffc72b3105a940.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.2 KiB {app} [built] [failed] [1 error]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 323 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/qusai/joShop/app/javascript/packs/app.jsx: Unexpected token (11:2)
+
+   9 | 
+  10 | const App = props => (
+> 11 |   return(
+     |   ^
+  12 |     <Shops />
+  13 |   )
+  14 | )
+    at Object._raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:748:17)
+    at Object.raiseWithData (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:741:17)
+    at Object.raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:735:17)
+    at Object.unexpected (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10575:20)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at /home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:39
+    at Object.allowInAnd (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11547:12)
+    at Object.parseMaybeAssignAllowIn (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:17)
+    at Object.parseParenAndDistinguishExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10752:28)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10470:21)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at Object.parseFunctionBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11214:24)
+    at Object.parseArrowExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11193:10)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10428:25)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1385.8ms | Allocations: 2775)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1388.6ms | Allocations: 5571)
+Completed 200 OK in 1390ms (Views: 1389.1ms | Allocations: 6015)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:25:15 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: bab7c72607e19083f228
+Version: webpack 4.46.0
+Time: 583ms
+Built at: 02/02/2021 5:25:17 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-024bcd8198206104d4ac.js   7.05 KiB          app  [emitted] [immutable]  app
+        js/app-024bcd8198206104d4ac.js.map   3.51 KiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-2b9259e1e274e2d6b41e.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-2b9259e1e274e2d6b41e.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-024bcd8198206104d4ac.js js/app-024bcd8198206104d4ac.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-2b9259e1e274e2d6b41e.js js/shops/index-2b9259e1e274e2d6b41e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.2 KiB {app} [built] [failed] [1 error]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 329 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/qusai/joShop/app/javascript/packs/app.jsx: Unexpected token (11:2)
+
+   9 | 
+  10 | const App = props => (
+> 11 |   return(
+     |   ^
+  12 |     <Shops />
+  13 |   )
+  14 | )
+    at Object._raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:748:17)
+    at Object.raiseWithData (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:741:17)
+    at Object.raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:735:17)
+    at Object.unexpected (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10575:20)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at /home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:39
+    at Object.allowInAnd (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11547:12)
+    at Object.parseMaybeAssignAllowIn (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:17)
+    at Object.parseParenAndDistinguishExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10752:28)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10470:21)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at Object.parseFunctionBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11214:24)
+    at Object.parseArrowExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11193:10)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10428:25)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1479.9ms | Allocations: 2775)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1482.8ms | Allocations: 5571)
+Completed 200 OK in 1484ms (Views: 1483.5ms | Allocations: 6014)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:26:00 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1f108146bbdbc2d4b719
+Version: webpack 4.46.0
+Time: 603ms
+Built at: 02/02/2021 5:26:01 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-9b50d4c56b4dd2f53d9f.js   7.05 KiB          app  [emitted] [immutable]  app
+        js/app-9b50d4c56b4dd2f53d9f.js.map   3.51 KiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-2b9259e1e274e2d6b41e.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-2b9259e1e274e2d6b41e.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-9b50d4c56b4dd2f53d9f.js js/app-9b50d4c56b4dd2f53d9f.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-2b9259e1e274e2d6b41e.js js/shops/index-2b9259e1e274e2d6b41e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.19 KiB {app} [built] [failed] [1 error]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 329 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/qusai/joShop/app/javascript/packs/app.jsx: Unexpected token (11:2)
+
+   9 | 
+  10 | const App = props => (
+> 11 |   return  <Shops />
+     |   ^
+  12 | 
+  13 | )
+  14 | 
+    at Object._raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:748:17)
+    at Object.raiseWithData (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:741:17)
+    at Object.raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:735:17)
+    at Object.unexpected (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10575:20)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at /home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:39
+    at Object.allowInAnd (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11547:12)
+    at Object.parseMaybeAssignAllowIn (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:17)
+    at Object.parseParenAndDistinguishExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10752:28)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10470:21)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at Object.parseFunctionBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11214:24)
+    at Object.parseArrowExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11193:10)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10428:25)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1552.5ms | Allocations: 2771)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1555.4ms | Allocations: 5575)
+Completed 200 OK in 1557ms (Views: 1556.1ms | Allocations: 6014)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:26:57 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 033a8ca57d2033c6d2e6
+Version: webpack 4.46.0
+Time: 717ms
+Built at: 02/02/2021 5:26:59 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-333a8d9185b95331fbc5.js   7.06 KiB          app  [emitted] [immutable]  app
+        js/app-333a8d9185b95331fbc5.js.map   3.51 KiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-2b9259e1e274e2d6b41e.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-2b9259e1e274e2d6b41e.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-333a8d9185b95331fbc5.js js/app-333a8d9185b95331fbc5.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-2b9259e1e274e2d6b41e.js js/shops/index-2b9259e1e274e2d6b41e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.2 KiB {app} [built] [failed] [1 error]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 329 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/qusai/joShop/app/javascript/packs/app.jsx: Unexpected token (11:2)
+
+   9 | 
+  10 | const App = props => (
+> 11 |   return {
+     |   ^
+  12 |     <Shops />  
+  13 |   }
+  14 | 
+    at Object._raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:748:17)
+    at Object.raiseWithData (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:741:17)
+    at Object.raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:735:17)
+    at Object.unexpected (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10575:20)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at /home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:39
+    at Object.allowInAnd (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11547:12)
+    at Object.parseMaybeAssignAllowIn (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:17)
+    at Object.parseParenAndDistinguishExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10752:28)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10470:21)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at Object.parseFunctionBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11214:24)
+    at Object.parseArrowExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11193:10)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10428:25)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1677.0ms | Allocations: 2774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1680.6ms | Allocations: 5580)
+Completed 200 OK in 1681ms (Views: 1681.0ms | Allocations: 6024)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:28:39 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1846957f987dc271ab0e
+Version: webpack 4.46.0
+Time: 583ms
+Built at: 02/02/2021 5:28:41 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-63dd4852b2323f9ff828.js   7.05 KiB          app  [emitted] [immutable]  app
+        js/app-63dd4852b2323f9ff828.js.map   3.51 KiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-2b9259e1e274e2d6b41e.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-2b9259e1e274e2d6b41e.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-63dd4852b2323f9ff828.js js/app-63dd4852b2323f9ff828.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-2b9259e1e274e2d6b41e.js js/shops/index-2b9259e1e274e2d6b41e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.2 KiB {app} [built] [failed] [1 error]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 329 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/qusai/joShop/app/javascript/packs/app.jsx: Unexpected token (11:2)
+
+   9 | 
+  10 | const App = props => (
+> 11 |   return (
+     |   ^
+  12 |     <Shops />
+  13 |   )
+  14 | 
+    at Object._raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:748:17)
+    at Object.raiseWithData (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:741:17)
+    at Object.raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:735:17)
+    at Object.unexpected (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10575:20)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at /home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:39
+    at Object.allowInAnd (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11547:12)
+    at Object.parseMaybeAssignAllowIn (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:17)
+    at Object.parseParenAndDistinguishExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10752:28)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10470:21)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at Object.parseFunctionBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11214:24)
+    at Object.parseArrowExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11193:10)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10428:25)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1431.4ms | Allocations: 2774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1434.4ms | Allocations: 5578)
+Completed 200 OK in 1435ms (Views: 1434.7ms | Allocations: 6018)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:30:51 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: bdb6a6b2830f0bd161a7
+Version: webpack 4.46.0
+Time: 762ms
+Built at: 02/02/2021 5:30:53 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-63dd4852b2323f9ff828.js   7.05 KiB          app  [emitted] [immutable]  app
+        js/app-63dd4852b2323f9ff828.js.map   3.51 KiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-9eece61da35bbf7fa906.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-9eece61da35bbf7fa906.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-63dd4852b2323f9ff828.js js/app-63dd4852b2323f9ff828.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-9eece61da35bbf7fa906.js js/shops/index-9eece61da35bbf7fa906.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 3.2 KiB {app} [built] [failed] [1 error]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 337 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 6 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/qusai/joShop/app/javascript/packs/app.jsx: Unexpected token (11:2)
+
+   9 | 
+  10 | const App = props => (
+> 11 |   return (
+     |   ^
+  12 |     <Shops />
+  13 |   )
+  14 | 
+    at Object._raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:748:17)
+    at Object.raiseWithData (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:741:17)
+    at Object.raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:735:17)
+    at Object.unexpected (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10575:20)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at /home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:39
+    at Object.allowInAnd (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11547:12)
+    at Object.parseMaybeAssignAllowIn (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9893:17)
+    at Object.parseParenAndDistinguishExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10752:28)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10470:21)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at Object.parseFunctionBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11214:24)
+    at Object.parseArrowExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11193:10)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10428:25)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1753.3ms | Allocations: 2774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1757.0ms | Allocations: 5568)
+Completed 200 OK in 1758ms (Views: 1757.5ms | Allocations: 6007)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:31:29 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e884cbe412c7f6399bd8
+Version: webpack 4.46.0
+Time: 903ms
+Built at: 02/02/2021 5:31:31 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-4014dd092c33c3a155e6.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-4014dd092c33c3a155e6.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-9eece61da35bbf7fa906.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-9eece61da35bbf7fa906.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-4014dd092c33c3a155e6.js js/app-4014dd092c33c3a155e6.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-9eece61da35bbf7fa906.js js/shops/index-9eece61da35bbf7fa906.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 961 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 337 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'shops/index.jsx' in '/home/qusai/joShop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-36 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1818.3ms | Allocations: 2775)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1821.5ms | Allocations: 5569)
+Completed 200 OK in 1822ms (Views: 1821.9ms | Allocations: 6007)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:32:15 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5e95d0d300267b12586b
+Version: webpack 4.46.0
+Time: 1256ms
+Built at: 02/02/2021 5:32:17 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-4014dd092c33c3a155e6.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-4014dd092c33c3a155e6.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-0cdd538646a351a26449.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-0cdd538646a351a26449.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-4014dd092c33c3a155e6.js js/app-4014dd092c33c3a155e6.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-0cdd538646a351a26449.js js/shops/index-0cdd538646a351a26449.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 961 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 333 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'shops/index.jsx' in '/home/qusai/joShop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-36 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 2254.6ms | Allocations: 2775)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 2258.8ms | Allocations: 5569)
+Completed 200 OK in 2260ms (Views: 2259.3ms | Allocations: 6007)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:33:23 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shops/index.html.haml within layouts/application (Duration: 5.6ms | Allocations: 2909)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 12.3ms | Allocations: 8755)
+Completed 200 OK in 16ms (Views: 14.2ms | Allocations: 9968)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:49:02 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 7890e6d3159caf2d9d6e
+Version: webpack 4.46.0
+Time: 1027ms
+Built at: 02/02/2021 5:49:03 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-4014dd092c33c3a155e6.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-4014dd092c33c3a155e6.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-625d3a4fcc6b5cf1133a.js   7.11 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-625d3a4fcc6b5cf1133a.js.map   3.53 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-4014dd092c33c3a155e6.js js/app-4014dd092c33c3a155e6.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-625d3a4fcc6b5cf1133a.js js/shops/index-625d3a4fcc6b5cf1133a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 961 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 3.21 KiB {shops/index} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/shops/index.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/qusai/joShop/app/javascript/packs/shops/index.jsx: Unexpected token (4:4)
+
+  2 | 
+  3 | export default function Shops (props) {
+> 4 |     %h2 qqqqqqqqqqqqqqqqqqq
+    |     ^
+  5 | }
+  6 | 
+    at Object._raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:748:17)
+    at Object.raiseWithData (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:741:17)
+    at Object.raise (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:735:17)
+    at Object.unexpected (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9101:16)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10575:20)
+    at Object.parseExprAtom (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:4763:20)
+    at Object.parseExprSubscripts (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10150:23)
+    at Object.parseUpdate (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10130:21)
+    at Object.parseMaybeUnary (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:10119:17)
+    at Object.parseExprOps (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9989:23)
+    at Object.parseMaybeConditional (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9963:23)
+    at Object.parseMaybeAssign (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9926:21)
+    at Object.parseExpressionBase (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9871:23)
+    at /home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9865:39
+    at Object.allowInAnd (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11541:16)
+    at Object.parseExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:9865:17)
+    at Object.parseStatementContent (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11807:23)
+    at Object.parseStatement (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11676:17)
+    at Object.parseBlockOrModuleBlockBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:12258:25)
+    at Object.parseBlockBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:12249:10)
+    at Object.parseBlock (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:12233:10)
+    at Object.parseFunctionBody (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11221:24)
+    at Object.parseFunctionBodyAndFinish (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11205:10)
+    at /home/qusai/joShop/node_modules/@babel/parser/lib/index.js:12391:12
+    at Object.withTopicForbiddingContext (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11516:14)
+    at Object.parseFunction (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:12390:10)
+    at Object.parseExportDefaultExpression (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:12872:19)
+    at Object.parseExport (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:12795:31)
+    at Object.parseStatementContent (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11782:27)
+    at Object.parseStatement (/home/qusai/joShop/node_modules/@babel/parser/lib/index.js:11676:17)
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'shops/index.jsx' in '/home/qusai/joShop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-36 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1875.0ms | Allocations: 4037)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1879.6ms | Allocations: 9881)
+Completed 200 OK in 1883ms (Views: 1882.1ms | Allocations: 11094)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:49:47 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: eec50bc7471a566f697d
+Version: webpack 4.46.0
+Time: 1053ms
+Built at: 02/02/2021 5:49:49 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-4014dd092c33c3a155e6.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-4014dd092c33c3a155e6.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-1b6abaf253328f7378b6.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-1b6abaf253328f7378b6.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-4014dd092c33c3a155e6.js js/app-4014dd092c33c3a155e6.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-1b6abaf253328f7378b6.js js/shops/index-1b6abaf253328f7378b6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 961 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 334 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'shops/index.jsx' in '/home/qusai/joShop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-36 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1954.9ms | Allocations: 6157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1961.8ms | Allocations: 14224)
+Completed 200 OK in 1967ms (Views: 1963.1ms | ActiveRecord: 0.0ms | Allocations: 17396)
+
+
+Started GET "/" for ::1 at 2021-02-02 17:50:43 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e3cfe0afc3023947e800
+Version: webpack 4.46.0
+Time: 1119ms
+Built at: 02/02/2021 5:50:45 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-2b95f30ec2e7c4f1ef65.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-2b95f30ec2e7c4f1ef65.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-cfeb44b5af22819abbbc.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-cfeb44b5af22819abbbc.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-2b95f30ec2e7c4f1ef65.js js/app-2b95f30ec2e7c4f1ef65.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-cfeb44b5af22819abbbc.js js/shops/index-cfeb44b5af22819abbbc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 983 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 335 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'shops/index.jsx' in '/home/qusai/joShop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-36 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 2048.5ms | Allocations: 2775)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 2051.2ms | Allocations: 5571)
+Completed 200 OK in 2052ms (Views: 2051.7ms | ActiveRecord: 0.0ms | Allocations: 6020)
+
+
+Started GET "/" for ::1 at 2021-02-02 18:33:07 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 43cad219f786ae5afeb1
+Version: webpack 4.46.0
+Time: 864ms
+Built at: 02/02/2021 6:33:08 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-2b95f30ec2e7c4f1ef65.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-2b95f30ec2e7c4f1ef65.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-cf434e6ab29123cf23e3.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-cf434e6ab29123cf23e3.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-2b95f30ec2e7c4f1ef65.js js/app-2b95f30ec2e7c4f1ef65.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-cf434e6ab29123cf23e3.js js/shops/index-cf434e6ab29123cf23e3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 983 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 360 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'shops/index.jsx' in '/home/qusai/joShop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-36 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1751.1ms | Allocations: 2774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1754.4ms | Allocations: 5580)
+Completed 200 OK in 1756ms (Views: 1755.0ms | Allocations: 6025)
+
+
+Started GET "/" for ::1 at 2021-02-02 18:33:44 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 2cf9c5d92c893811c7ad
+Version: webpack 4.46.0
+Time: 900ms
+Built at: 02/02/2021 6:33:46 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-3edd3af9f62c2f666262.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-3edd3af9f62c2f666262.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+    js/shops/index-cf434e6ab29123cf23e3.js   86.5 KiB  shops/index  [emitted] [immutable]  shops/index
+js/shops/index-cf434e6ab29123cf23e3.js.map   98.9 KiB  shops/index  [emitted] [dev]        shops/index
+                             manifest.json  986 bytes               [emitted]              
+Entrypoint app = js/app-3edd3af9f62c2f666262.js js/app-3edd3af9f62c2f666262.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint shops/index = js/shops/index-cf434e6ab29123cf23e3.js js/shops/index-cf434e6ab29123cf23e3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 979 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/shops/index.jsx] 360 bytes {shops/index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'shops/index' in '/home/qusai/joShop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-32 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1824.8ms | Allocations: 2775)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 1828.0ms | Allocations: 5571)
+Completed 200 OK in 1829ms (Views: 1828.4ms | Allocations: 6015)
+
+
+Started GET "/" for ::1 at 2021-02-02 18:36:31 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 118739577ea6c8c9f4ef
+Version: webpack 4.46.0
+Time: 1028ms
+Built at: 02/02/2021 6:36:33 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-4081a773dc55b4446077.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-4081a773dc55b4446077.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+          js/index-d1bf5a337046b320880a.js   86.5 KiB        index  [emitted] [immutable]  index
+      js/index-d1bf5a337046b320880a.js.map   98.9 KiB        index  [emitted] [dev]        index
+                             manifest.json  944 bytes               [emitted]              
+Entrypoint app = js/app-4081a773dc55b4446077.js js/app-4081a773dc55b4446077.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint index = js/index-d1bf5a337046b320880a.js js/index-d1bf5a337046b320880a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 977 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/index.jsx] 354 bytes {index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'index.jsx' in '/home/qusai/joShop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-30 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 1940.0ms | Allocations: 5976)
+  Rendered layout layouts/application.html.haml (Duration: 1940.2ms | Allocations: 6045)
+Completed 500 Internal Server Error in 1941ms (Allocations: 6469)
+
+
+  
+ActionView::Template::Error (Webpacker can't find shops/index.js in /home/qusai/joShop/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "app.js": "/packs/js/app-4081a773dc55b4446077.js",
+  "app.js.map": "/packs/js/app-4081a773dc55b4446077.js.map",
+  "application.js": "/packs/js/application-d5a3c3b4dce84b5eb605.js",
+  "application.js.map": "/packs/js/application-d5a3c3b4dce84b5eb605.js.map",
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/packs/js/app-4081a773dc55b4446077.js"
+      ],
+      "js.map": [
+        "/packs/js/app-4081a773dc55b4446077.js.map"
+      ]
+    },
+    "application": {
+      "js": [
+        "/packs/js/application-d5a3c3b4dce84b5eb605.js"
+      ],
+      "js.map": [
+        "/packs/js/application-d5a3c3b4dce84b5eb605.js.map"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-d1bf5a337046b320880a.js"
+      ],
+      "js.map": [
+        "/packs/js/index-d1bf5a337046b320880a.js.map"
+      ]
+    }
+  },
+  "index.js": "/packs/js/index-d1bf5a337046b320880a.js",
+  "index.js.map": "/packs/js/index-d1bf5a337046b320880a.js.map"
+}
+):
+    1: = javascript_pack_tag 'shops/index'
+  
+app/views/shops/index.html.haml:1
+Started GET "/" for ::1 at 2021-02-02 18:37:30 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shops/index.html.haml within layouts/application (Duration: 3.4ms | Allocations: 2907)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 8.1ms | Allocations: 8756)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 9970)
+
+
+Started GET "/" for ::1 at 2021-02-02 18:37:37 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shops/index.html.haml within layouts/application (Duration: 3.7ms | Allocations: 2904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 10.9ms | Allocations: 8729)
+Completed 200 OK in 13ms (Views: 12.1ms | Allocations: 9935)
+
+
+Started GET "/" for ::1 at 2021-02-02 19:36:56 +0200
+Processing by ShopsController#index as HTML
+  Rendering layout layouts/application.html.haml
+  Rendering shops/index.html.haml within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 1bc1af1fba0541f826bc
+Version: webpack 4.46.0
+Time: 3832ms
+Built at: 02/02/2021 7:37:01 PM
+                                     Asset       Size       Chunks                         Chunk Names
+            js/app-8159b5b6a7712ddf0c6f.js    1.1 MiB          app  [emitted] [immutable]  app
+        js/app-8159b5b6a7712ddf0c6f.js.map   1.27 MiB          app  [emitted] [dev]        app
+    js/application-d5a3c3b4dce84b5eb605.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d5a3c3b4dce84b5eb605.js.map    139 KiB  application  [emitted] [dev]        application
+          js/index-9a66bf6d4ceee4f0b983.js   86.5 KiB        index  [emitted] [immutable]  index
+      js/index-9a66bf6d4ceee4f0b983.js.map   98.9 KiB        index  [emitted] [dev]        index
+                             manifest.json  944 bytes               [emitted]              
+Entrypoint app = js/app-8159b5b6a7712ddf0c6f.js js/app-8159b5b6a7712ddf0c6f.js.map
+Entrypoint application = js/application-d5a3c3b4dce84b5eb605.js js/application-d5a3c3b4dce84b5eb605.js.map
+Entrypoint index = js/index-9a66bf6d4ceee4f0b983.js js/index-9a66bf6d4ceee4f0b983.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/app.jsx] 985 bytes {app} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/index.jsx] 362 bytes {index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+ERROR in ./app/javascript/packs/app.jsx
+Module not found: Error: Can't resolve 'index.jsx' in '/home/qusai/jo_online_shop/app/javascript/packs'
+ @ ./app/javascript/packs/app.jsx 10:0-30 13:42-47
+
+  Rendered shops/index.html.haml within layouts/application (Duration: 4857.5ms | Allocations: 6157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.haml (Duration: 4865.3ms | Allocations: 14217)
+Completed 200 OK in 4872ms (Views: 4867.0ms | ActiveRecord: 0.0ms | Allocations: 17389)
+
+
